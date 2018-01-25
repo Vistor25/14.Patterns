@@ -18,6 +18,14 @@ namespace ConsoleTest
             connection.InitialCatalog = "server1";
             connection.ConnectTimeout = 45;
             Console.WriteLine(connection);
+            CreateConnectioString cs = new CreateConnectioString();
+            Console.WriteLine(cs.Create()
+                .UseDB("MyDB")
+                .UseCatalog("server1")
+                .UseUser("sqlserver1")
+                .WithPassword("123456789")
+                .WithTimeout(30)
+                .Build());
             Console.ReadKey();
         }
     }

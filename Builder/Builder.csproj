@@ -41,6 +41,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Builder.cs" />
+    <Compile Include="IBuild.cs" />
+    <Compile Include="IConectionTimeout.cs" />
+    <Compile Include="IPassword.cs" />
+    <Compile Include="IUseCatalog.cs" />
+    <Compile Include="IUseDB.cs" />
+    <Compile Include="IUseUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
